@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Matvey Bashlykov" />
+    <meta name="descriptioin" content="Page with example of graphics" />
+    <link rel="icon" href="Images/CreeperIcon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <title>CN MPEI B4 S2 Lab Graphics Page</title>
+</head>
+
+<body>
+    <nav id="nav-menu">
+        <div class="subnav">
+            <button class="subnav-button">Menu &gt;&gt;</button>
+
+            <div class="subnav-content-1">
+                <div class="subnav">
+                    <button class="subnav-button">Home &gt;&gt;</button>
+                    <div class="subnav-content-2">
+                        <a href="index.html">Home</a>
+                        <a href="index-frame.html">Home frame (9.3)</a>
+                    </div>
+                </div>
+
+                <div class="subnav">
+                    <button class="subnav-button">Content &gt;&gt;</button>
+                    <div class="subnav-content-2">
+                        <a href="layers.html">Layers</a>
+                        <a id="active" href="graphics.html">Graphics</a>
+                        <a href="generator.html">Generator</a>
+                        <a href="quiz.html">Quiz</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main id="home-main">
+        <hr/>
+
+        <h1>Разработка страниц с сегментированной графикой, анимированной графикой и мультимедиа</h1>
+
+        <hr/>
+
+        <figure>
+            <img src="Images/DnD Anuran.png" alt="Anuran continent, Al'tanor for HTML" usemap="#Anuran map" width="1296"
+                height="675" />
+            <figcaption>Материк Энуран, Аль'танор. Карта изображений, выполненная при помощи HTML</figcaption>
+        </figure>
+
+        <map name="Anuran map">
+            <area shape="rect" coords="440,200,470,220" alt="Capital" href="trillum.html" />
+            <area shape="rect" coords="500,240,550,260" alt="Spinefort" href="spinefort.html" />
+            <area shape="rect" coords="390,226,415,245" alt="Monastry of Sacred Rose"
+                href="monastery-of-sacred-rose.html" />
+            <area shape="rect" coords="440,345,470,360" alt="Sadpoint" href="sadpoint.html" />
+            <area shape="rect" coords="475,345,495,355" alt="Dozn" href="dozn.html" />
+            <area shape="rect" coords="365,280,395,295" alt="Hark" href="hark.html" />
+            <area shape="rect" coords="555,260,595,285" alt="Sanctuary of Origin" href="sanctuary-of-origin.html" />
+            <area shape="rect" coords="615,290,660,315" alt="Eastern front" href="eastern-front.html" />
+
+            <area shape="poly" coords="310,495,310,445,340,430,355,410,380,415,490,510,490,530,473,537,470,565,460,565,410,545,
+        400,528,360,520,355,509,327,505" alt="Shanorat Desert" href="shanorat-desert.html" />
+        </map>
+
+        <hr />
+
+        <figure>
+            <img src="Images/CriticalRoleLogo.png" alt="Critical Role Logo" usemap="#Critical Role" width="589"
+                height="589">
+            <figcaption>Пример карты изображений с круглой областью</figcaption>
+        </figure>
+
+        <map name="Critical Role">
+            <area shape="circle" coords="295,295,295" href="https://criticalrole.fandom.com/wiki/Critical_Role_Wiki"
+                alt="Critical Role">
+        </map>
+
+        <hr />
+
+        <figure id="anuran-css">
+            <img src="Images/DnD Anuran.png" alt="Anuran continent, Al'tanor for CSS" width="1296" height="675" />
+            <a id="trillum-link" href="trillum.html"></a>
+            <a id="spinefort-link" href="spinefort.html"></a>
+            <a id="monastery-of-sacred-rose-link" href="monastery-of-sacred-rose.html"></a>
+            <a id="sadpoint-link" href="sadpoint.html"></a>
+            <a id="dozn-link" href="dozn.html"></a>
+            <a id="hark-link" href="hark.html"></a>
+            <a id="sanctuary-of-origin-link" href="sanctuary-of-origin.html"></a>
+            <a id="eastern-front-link" href="eastern-front.html"></a>
+
+            <a id="shanorat-desert-link-1" href="shanorat-desert.html"></a>
+            <a id="shanorat-desert-link-2" href="shanorat-desert.html"></a>
+
+            <figcaption>Материк Энуран, Аль'танор. Карта изображений, выполненная при помощи CSS</figcaption>
+        </figure>
+
+        <hr />
+
+        <figure>
+            <img src="Images/MatthewMercer.gif" alt="Matthew Mercer" width="498" height="261" />
+            <figcaption>Пример gif-анимации</figcaption>
+        </figure>
+
+        <hr />
+
+        <figure>
+            <audio controls>
+                <source src="Audio/My Hero Academia OST - You Say Run.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <figcaption>Пример встраивания аудио</figcaption>
+        </figure>
+
+        <hr />
+
+        <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LhFETREAvhc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <figcaption>Пример встраивания видео</figcaption>
+        </figure>
+
+        <hr />
+    </main>
+
+</body>
+
+</html>

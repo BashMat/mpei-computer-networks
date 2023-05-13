@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Matvey Bashlykov">
+    <meta name="descriptioin" content="Quiz page">
+    <link rel="icon" href="Images/CreeperIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src='Scripts/quiz.js' defer></script>
+    <title>CN MPEI B4 S2 Lab Quiz Page</title>
+</head>
+
+
+<body>
+
+    <!--
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="index.html">Home</a>
+                </td>
+                <td rowspan="4">
+                    <h1>Домашняя страница для лабораторных работ по "Компьютерным сетям"</h1>
+                    <p>В вкладке Layers выполнена лабораторная работа №7: использование слоёв.</p>
+                    <p>В вкладке Graphics выполнена лабораторная работа №8: разработка страниц с сегментированной графикой,
+                        анимированной графикой и мультимедиа
+                    </p>
+                    <p>В вкладке Home выполнены лабораторные работы №№9.1-9.3: вёрстка страниц с применением таблиц, слоёв и фреймов</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="layers.html">Layers</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="graphics.html">Graphics</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="about.html">About</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    -->
+
+    <nav id="nav-menu">
+        <div class="subnav">
+            <button class="subnav-button">Menu &gt;&gt;</button>
+
+            <div class="subnav-content-1">
+                <div class="subnav">
+                    <button class="subnav-button">Home &gt;&gt;</button>
+                    <div class="subnav-content-2">
+                        <a href="index.html">Home</a>
+                        <a href="index-frame.html">Home frame (9.3)</a>
+                    </div>
+                </div>
+
+                <div class="subnav">
+                    <button class="subnav-button">Content &gt;&gt;</button>
+                    <div class="subnav-content-2">
+                        <a href="layers.html">Layers</a>
+                        <a href="graphics.html">Graphics</a>
+                        <a href="generator.html">Generator</a>
+                        <a id="active" href="quiz.html">Quiz</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="home-main">
+        <hr />
+
+        <h1>Вопросы</h1>
+
+        <hr />
+
+        <input id="button-launch-test" type="button" value="Начать тест">
+
+        <div id="timer">
+            00:00
+        </div>
+
+        <div id="test">
+            <div class="question">
+                <p>1. Какое из этих заклинаний является заговором?</p>
+                <p><label for="spell-cantrip-opt-1">Огненный шар</label>
+                    <input type="radio" name="spell-cantrip" id="spell-cantrip-opt-1" value="Огненный шар">
+                </p>
+                <p><label for="spell-cantrip-opt-2">Огненный снаряд</label>
+                    <input type="radio" name="spell-cantrip" id="spell-cantrip-opt-2" value="Огненный снаряд">
+                </p>
+                <p><label for="spell-cantrip-opt-3">Телепортация</label>
+                    <input type="radio" name="spell-cantrip" id="spell-cantrip-opt-3" value="Телепортация">
+                </p>
+                <p><label for="spell-cantrip-opt-4">Послание</label>
+                    <input type="radio" name="spell-cantrip" id="spell-cantrip-opt-4" value="Послание">
+                </p>
+            </div>
+
+            <hr />
+
+            <div class="question">
+                <p>2. В каком месте происходят события кампании D&D?</p>
+                <p><label for="campaign-location-opt-1">Элдиранская Империя</label>
+                    <input type="radio" name="campaign-location" id="campaign-location-opt-1"
+                        value="Элдиранская Империя">
+                </p>
+                <p><label for="campaign-location-opt-2">Абадисский Ард</label>
+                    <input type="radio" name="campaign-location" id="campaign-location-opt-2" value="Абадисский Ард">
+                </p>
+                <p><label for="campaign-location-opt-3">Империя Атрил</label>
+                    <input type="radio" name="campaign-location" id="campaign-location-opt-3" value="Империя Атрил">
+                </p>
+                <p><label for="campaign-location-opt-4">Графство Лакруа</label>
+                    <input type="radio" name="campaign-location" id="campaign-location-opt-4" value="Графство Лакруа">
+                </p>
+            </div>
+
+            <hr />
+
+            <div class="question">
+                <p>3. Как зовут императора Империи Атрил?</p>
+                <p><label for="emperor-opt-1">Тэнзэм Ларандер</label>
+                    <input type="radio" name="emperor" id="emperor-opt-1" value="Тэнзэм Ларандер">
+                </p>
+                <p><label for="emperor-opt-2">Тэзрин Ильтамар II</label>
+                    <input type="radio" name="emperor" id="emperor-opt-2" value="Тэзрин Ильтамар II">
+                </p>
+                <p><label for="emperor-opt-3">Новак Ильтамар</label>
+                    <input type="radio" name="emperor" id="emperor-opt-3" value="Новак Ильтамар">
+                </p>
+                <p><label for="emperor-opt-4">Александр дан Арген</label>
+                    <input type="radio" name="emperor" id="emperor-opt-4" value="Александр дан Арген">
+                </p>
+            </div>
+
+            <hr />
+
+            <div class="question">
+                <p>4. Сколько баронов держат власть в Харке?</p>
+                <p><label for="barons-opt-1">Один</label>
+                    <input type="radio" name="barons" id="barons-opt-1" value="Один">
+                </p>
+                <p><label for="barons-opt-2">Два</label>
+                    <input type="radio" name="barons" id="barons-opt-2" value="Два">
+                </p>
+                <p><label for="barons-opt-3">Три</label>
+                    <input type="radio" name="barons" id="barons-opt-3" value="Три">
+                </p>
+                <p><label for="barons-opt-4">Четыре</label>
+                    <input type="radio" name="barons" id="barons-opt-4" value="Четыре">
+                </p>
+            </div>
+
+            <hr />
+
+            <input id="button-stop-test" type="button" value="Отправить">
+
+        </div>
+
+        <div id="results">
+            <p>Тест окончен!</p>
+            <p id="correct">Правильных ответов: %</p>
+        </div>
+
+        <hr />
+    </main>
+
+</body>
+
+
+</html>

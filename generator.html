@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Matvey Bashlykov">
+    <meta name="descriptioin" content="Generator page">
+    <link rel="icon" href="Images/CreeperIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="Scripts/generator.js" defer></script>
+    <title>CN MPEI B4 S2 Lab Generator Page</title>
+</head>
+
+
+<body>
+
+    <!--
+
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="index.html">Home</a>
+                </td>
+                <td rowspan="4">
+                    <h1>Домашняя страница для лабораторных работ по "Компьютерным сетям"</h1>
+                    <p>В вкладке Layers выполнена лабораторная работа №7: использование слоёв.</p>
+                    <p>В вкладке Graphics выполнена лабораторная работа №8: разработка страниц с сегментированной графикой,
+                        анимированной графикой и мультимедиа
+                    </p>
+                    <p>В вкладке Home выполнены лабораторные работы №№9.1-9.3: вёрстка страниц с применением таблиц, слоёв и фреймов</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="layers.html">Layers</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="graphics.html">Graphics</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="about.html">About</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    -->
+
+    <nav id="nav-menu">
+        <div class="subnav">
+            <button class="subnav-button">Menu &gt;&gt;</button>
+
+            <div class="subnav-content-1">
+                <div class="subnav">
+                    <button class="subnav-button">Home &gt;&gt;</button>
+                    <div class="subnav-content-2">
+                        <a href="index.html">Home</a>
+                        <a href="index-frame.html">Home frame (9.3)</a>
+                    </div>
+                </div>
+
+                <div class="subnav">
+                    <button class="subnav-button">Content &gt;&gt;</button>
+                    <div class="subnav-content-2">
+                        <a href="layers.html">Layers</a>
+                        <a href="graphics.html">Graphics</a>
+                        <a id="active" href="generator.html">Generator</a>
+                        <a href="quiz.html">Quiz</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="home-main">
+        <hr/>
+
+        <h1>Страница с вопросами для генерации новой страницы</h1>
+
+        <hr/>
+
+        <div>
+            <p>Имя: <input id="in-name" type="text" placeholder="Имя"/></p>
+
+            <p>Пол:
+                <br/>
+                <input id="radio-male" name="sex" type="radio" value="male" checked/>
+                <label for="radio-male">Мужской</label>
+
+                <br/>
+                <input id="radio-female" name="sex" type="radio" value="female"/>
+                <label for="radio-female">Женский</label>
+            </p>
+            
+            <p>Дата рождения: <input id="in-date" type="date"/></p>
+    
+            <p>О себе: <input id="in-about-me" type="text" placeholder="О себе"/></p>
+    
+            <button id="button-generate">Сгенерировать страницу</button>
+        </div>
+
+        <hr/>
+    </main>
+
+</body>
+
+
+</html>

@@ -1,0 +1,369 @@
+/*.div p
+{
+    color: red;
+}
+
+.div .div p
+{
+    color: green
+}
+*/
+
+#nav-menu
+{
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    border: 1px #eee;
+}
+
+#nav-menu a
+{   
+    color: rgba(238, 238, 238, 0.57);
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+#nav-menu a:hover
+{
+    color: white;
+}
+
+#nav-menu a#active
+{
+    color: white;
+}
+
+.subnav
+{
+    position: relative;
+}
+
+.subnav:hover > .subnav-button
+{
+    color: white;
+}
+
+.subnav-button
+{
+    width: 100px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: rgba(238, 238, 238, 0.57);
+    /*padding: 14px 16px;*/
+    background-color: inherit;
+    text-align: left;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.subnav-content-1, .subnav-content-2
+{
+    display: none;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: black;
+    width: 100px;
+    z-index: 1;
+}
+  
+/*
+.subnav-content a
+{
+    float: left;
+    color:rgba(238, 238, 238, 0.57);
+    text-decoration: none;
+}
+*/
+  
+/*
+.subnav-content a:hover
+{
+    color: white;
+}
+*/
+
+.subnav:hover .subnav-content-1
+{
+    display: block;
+}
+
+.subnav-content-1 .subnav:hover .subnav-content-2
+{
+    display: block;
+}
+
+#menu-frame
+{
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#content-frame
+{
+    margin-left: 100px;
+    height: 100vh;
+    width: 100%;
+}
+
+#home-main
+{
+    margin-left: 100px;
+    z-index: 0;
+}
+
+@font-face {
+    font-family: 'digital-clock-font';
+    src: url(Fonts/digital-7/digital-7.ttf);
+}
+
+#digital-clock
+{
+    height: 100%;
+    min-width: fit-content;
+    background-color: black;
+    color: #eee;
+    font-size: 72px;
+    font-family: 'digital-clock-font';
+    border: 1px #eee;;
+    margin-left: 45%;
+    margin-right: 40%;
+    padding: 5px;
+    text-align: center;
+}
+
+#timer
+{
+    height: 100%;
+    min-width: fit-content;
+    background-color: black;
+    color: #eee;
+    font-size: 72px;
+    font-family: 'digital-clock-font';
+    border: 1px #eee;;
+    margin-left: 45%;
+    margin-right: 40%;
+    padding: 5px;
+    text-align: center;
+    display: none;
+}
+
+#test
+{
+    display: none;
+}
+
+#results
+{
+    display: none;
+}
+
+#current-date
+{
+    height: 100%;
+    min-width: fit-content;
+    background-color: black;
+    color: #eee;
+    font-size: 72px;
+    border: 1px #eee;;
+    margin-left: 45%;
+    margin-right: 40%;
+    padding: 0px;
+    text-align: center;
+}
+
+@keyframes ad-move
+{
+    0% {left: 0%} 
+    50% {left: 50%} 
+    100% {left: 0%}
+}
+
+#ad
+{
+    height: 100%;
+    position: relative;
+    min-width: fit-content;
+    background-color: #eee;
+    color: black;
+    margin-right: 50%;
+    padding: 0px;
+    text-align: center;
+    /*animation: ad-move 20s linear infinite; */
+}
+
+
+#layer-wrapper
+{
+    height: 1000px;
+}
+
+#layer-1
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#layer-1:hover
+{
+    z-index: 100;
+}
+
+#layer-2
+{
+    position: relative;
+    top: 200px;
+    left: -200px;
+    z-index: 2;
+}
+
+#layer-2:hover
+{
+    z-index: 100;
+}
+
+#layer-3
+{
+    position: relative;
+    top: 400px;
+    left: -400px;
+    z-index: 3;
+}
+
+#layer-3:hover
+{
+    z-index: 100;
+}
+
+/*
+#layer-1
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#layer-2
+{
+    position: relative;
+    top: 200px;
+    left: -200px;
+    z-index: 2;
+}
+
+#layer-3
+{
+    position: relative;
+    top: 400px;
+    left: -400px;
+    z-index: 3;
+}
+*/
+
+#anuran-css
+{
+    position: relative;
+}
+
+#trillum-link
+{
+    position: absolute;
+    top: 200px;
+    left: 440px;
+    width: 30px;
+    height: 20px;
+}
+
+#spinefort-link
+{
+    position: absolute;
+    top: 240px;
+    left: 500px;
+    width: 50px;
+    height: 20px;
+}
+
+#monastery-of-sacred-rose-link
+{
+    position: absolute;
+    top: 226px;
+    left: 390px;
+    width: 25px;
+    height: 19px;
+}
+
+#sadpoint-link
+{
+    position: absolute;
+    top: 345px;
+    left: 440px;
+    width: 30px;
+    height: 15px;
+}
+
+#dozn-link
+{
+    position: absolute;
+    top: 345px;
+    left: 475px;
+    width: 20px;
+    height: 10px;
+}
+
+#hark-link
+{
+    position: absolute;
+    top: 280px;
+    left: 365px;
+    width: 30px;
+    height: 15px;
+}
+
+#sanctuary-of-origin-link
+{
+    position: absolute;
+    top: 2260px;
+    left: 555px;
+    width: 40px;
+    height: 25px;
+}
+
+#eastern-front-link
+{
+    position: absolute;
+    top: 290px;
+    left: 615px;
+    width: 45px;
+    height: 25px;
+}
+
+#shanorat-desert-link-1
+{
+    position: absolute;
+    top: 415px;
+    left: 310px;
+    width: 108px;
+    height: 110px;
+}
+
+#shanorat-desert-link-2
+{
+    position: absolute;
+    top: 502px;
+    left: 408px;
+    width: 80px;
+    height: 65px;
+}
